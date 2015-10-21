@@ -78,7 +78,7 @@ Rails.application.configure do
 
   # Required for Heroku
   # Note to set this to actual hostname
-config.action_mailer.default_url_options = { host: 'https://secret-tunnels.herokuapp.com/' }
+  config.action_mailer.default_url_options = { :host => 'secret-tunnels.herokuapp.com' }
 
 # Sets paperclip to upload images to Amazon S3
   config.paperclip_defaults = {
