@@ -20,7 +20,7 @@ Rails.application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -78,7 +78,7 @@ Rails.application.configure do
 
   # Required for Heroku
   # Note to set this to actual hostname
-  config.action_mailer.default_url_options = { :host => 'secret-tunnels.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'https://secret-tunnels.herokuapp.com' }
 
 # Sets paperclip to upload images to Amazon S3
   config.paperclip_defaults = {
